@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&family=Roboto+Slab&display=swap');
-
 
 body {
   padding-top: 120px;
@@ -10,7 +8,7 @@ body {
 /* Navbar */
 .navbar {
   background-color: #4d4646;
-  font-family: "Roboto Slab";
+  font-family: 'Roboto Slab';
 }
 
 .navbar > .container img {
@@ -21,7 +19,7 @@ body {
 .navbar > .container p {
   padding-top: 30px;
   padding-left: 50px;
-  display:flex;
+  display: flex;
   flex-wrap: wrap;
   overflow-wrap: break-word;
   margin-left: auto;
@@ -34,24 +32,24 @@ body {
 }
 
 .m-0 {
-  margin:auto;
-  float:right;
+  margin: auto;
+  float: right;
   width: 200px;
 }
 
-/* Cards */ 
+/* Cards */
 .row img {
   width: 253px;
   height: 160px;
 }
 
 .row {
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
 
 .row h1 {
   text-align: center;
-  font-family: "Roboto Condensed";
+  font-family: 'Roboto Condensed';
   font-size: 50px;
   padding-top: 25px;
 }
@@ -76,30 +74,30 @@ body {
   text-align: center;
 }
 
-.card h5{
+.card h5 {
   color: #f5eaea;
-  font-family: "Roboto Slab";
+  font-family: 'Roboto Slab';
 }
 
 .card a {
-  font-family: "Roboto Slab";
+  font-family: 'Roboto Slab';
   font-size: 20px;
 }
 
 .card p {
   color: #f5eaea;
-  font-family: "Roboto";
+  font-family: 'Roboto';
 }
 
 .list-group-item {
   background-color: #5b5656;
-  font-family: "Roboto Slab";
+  font-family: 'Roboto Slab';
   color: #57b36b;
 }
 
 #all {
-  background-Color: gray;
-  color: #f5eaea
+  background-color: gray;
+  color: #f5eaea;
 }
 
 /* Forms */
@@ -120,7 +118,7 @@ body {
 
 #form {
   width: 250px;
-  display:flex;
+  display: flex;
   flex-direction: column;
   justify-content: center;
 }
@@ -139,16 +137,16 @@ body {
 /* Media Queries */
 
 @media screen and (max-width: 991px) {
-body {
-  padding-top:150px;
-}
-.list-group  {
-  padding-bottom: 25px;
-}
-.container > .row img {
-  padding-top:10px;
-  border-radius:25px;
-}
+  body {
+    padding-top: 150px;
+  }
+  .list-group {
+    padding-bottom: 25px;
+  }
+  .container > .row img {
+    padding-top: 10px;
+    border-radius: 25px;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -174,7 +172,7 @@ body {
     font-size: 13px;
   }
   .container > .row img {
-    max-width:208px;
+    max-width: 208px;
   }
   .container a {
     text-align: center;
