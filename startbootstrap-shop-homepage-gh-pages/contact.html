@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>WEB222 Store | Contact</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/styles.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-custom fixed-top">
+    <div class="container">
+      <a href="index.html">
+      <img class="logo" src="src/logo.png">
+    </a>
+      <p class="navbar-brand">Canada's most reputable store for all your marijuana needs</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ </div>
+ </div>
+
+  <!-- Form -->
+ <form id="contactForm" action="https://httpbin.org/post" method="POST">
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="contactFirstName">First Name</label>
+      <input type="text" name="First Name" class="form-control" id="contactFirstName" placeholder="First Name" required>
+    </div>
+
+    <div class="form-group col-md-6">
+      <label for="contactLastName">Last Name</label>
+      <input type="text" name="Last Name" class="form-control" id="contactLastName" placeholder="Last Name" required>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label for="contactEmail">Email</label>
+    <input type="email" name="Email" class="form-control" id="contactEmail" placeholder="something@somewhere.com" required>
+  </div>
+
+  <div class="form-group">
+    <label for="contactAddress">Address</label>
+    <input type="text" name="Address" class="form-control" id="contactAddress" placeholder="123 Steeles Street" required>
+  </div>
+
+  <div class="form-row">
+    <div class="form-group col-md-6">
+      <label for="contactCity">City</label>
+      <input list="cities" name="City" type="text" class="form-control" id="contactCity" required>
+      <datalist id="cities">
+        <option value="Toronto"></option>
+        <option value="Vancouver"></option>
+        <option value="Montreal"></option>
+        <option value="Niagara Falls"></option>
+        <option value="Victoria"></option>
+        <option value="Halifax"></option>
+        <option value="Quebec City"></option>
+        <option value="Calgary"></option>
+      </datalist>
+    </div>
+
+    <div class="form-group col-md-4">
+      <label for="contactNumber">Phone Number</label>
+      <input type="tel" name="Telephone" class="form-control" id="contactNumber" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+    </div>
+
+    <div class="form-group col-md-2">
+      <label for="contactPostalCode">Postal Code</label>
+      <input type="text" name="Postal Code" class="form-control" id="contactPostalCode" pattern="[ABCEGHJKLMNPRSTVXY][0-9][ABCEGHJKLMNPRSTVWXYZ][0-9][ABCEGHJKLMNPRSTVWXYZ][0-9]" required>
+    </div>
+  </div>
+
+  <div class="form-group col-md-4">
+    <label for="contactOption">Option</label>
+    <select id="contactOption" name="Option" class="form-control">
+      <option selected>Question</option>
+      <option>Comment</option>
+      <option>Order Problem</option>
+    </select>
+  </div>
+
+  <div class="form-group col-md-4 hid" style="display:none;">
+    <label for="orderNumber">Order Number</label>
+    <input type="text" name="Order Number" class="form-control" id="orderNumber" pattern="[0-9][0-9][0-9][0-9]">
+  </div>
+
+  <div class="form-group">
+    <label for="hiddenName"></label>
+    <input id="hiddenName" name="Hidden Name" type="hidden" value="Brian Maleki">
+  </div>
+</div>
+
+
+  <div class="form-group">
+    <label for="contactText">Example textarea</label>
+    <textarea class="form-control" name="Text" id="contactText" rows="4" required></textarea>
+  </div>
+
+  <div class="form-group">
+    <div class="form-check2">
+      <input class="form-check-input" type="checkbox" id="phoneCheck">
+      <label class="form-check-label" for="phoneCheck">
+        Would you like to be phoned?
+      </label>
+    </div>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+
+</form>
+
+  <!-- Footer -->
+  <footer class="py-5 bg-custom">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; GrindIt 2020</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="js/javascript.js"></script>
+
+</body>
+
+</html>
+
+  <!--    
+
+    3. The form should submit to https://httpbin.org/post using the POST method,
+    and only allow the user to submit when all data has been entered and there
+    aren't any validation errors.  The data posted to httpbin.org should include
+    all data defined in the form above (e.g., visible and hidden fields).
+
+  -->
+</body>
+
+</html>

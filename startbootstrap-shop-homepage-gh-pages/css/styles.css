@@ -1,0 +1,129 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Roboto+Condensed&family=Roboto+Slab&display=swap');
+
+
+body {
+  padding-top: 120px;
+  background-color: #f5eaea;
+}
+
+.navbar {
+  background-color: #4d4646;
+  font-family: "Roboto Slab";
+}
+
+.py-5 {
+  background-color: #4d4646;
+}
+
+
+.navbar > .container img {
+  width: 150px;
+  padding-right: 15px;
+}
+
+.container > .row img {
+  width: 253px;
+  height: 160px;
+}
+
+.navbar > .container p {
+  padding-top: 30px;
+  padding-left: 50px;
+}
+
+.container > .row h1 {
+  text-align: center;
+  font-family: "Roboto Condensed";
+  font-size: 50px;
+  padding-top: 25px;
+}
+
+.container a {
+  display: flex;
+  font-size: 22px;
+  justify-content: center;
+  color: #57b36b;
+}
+
+.container h5 {
+  display: flex;
+  justify-content: center;
+}
+
+.container p {
+  text-align: center;
+}
+
+.container > .row {
+  font-family: "Roboto";
+}
+
+.container > .row > .col-lg-9  > .row > .col-lg-4 > .card {
+  background-color: #5b5656;
+}
+
+.container > .row > .col-lg-9  > .row > .col-lg-4 > .card h5{
+  color: #f5eaea;
+  font-family: "Roboto Slab";
+}
+
+
+.container > .row > .col-lg-9  > .row > .col-lg-4 > .card a {
+  font-family: "Roboto Slab";
+  font-size: 20px;
+}
+
+.container > .row > .col-lg-9  > .row > .col-lg-4 > .card p {
+  color: #f5eaea;
+  font-family: "Roboto";
+}
+
+.container > .row > .col-lg-3 > .list-group > .list-group-item {
+  background-color: #5b5656;
+  font-family: "Roboto Slab";
+  color: #57b36b;
+}
+
+.container > .row > .col-lg-3 > .list-group > #all {
+  background-Color: gray;
+  color: #f5eaea
+}
+
+.form-email {
+  width: 250px;
+}
+
+.form-check {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #f5eaea;
+}
+
+.btn {
+  width: 250px;
+}
+
+#form {
+  width: 250px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.m-0 {
+  margin:auto;
+  float:right;
+  width: 200px;
+}
+
+#contactForm {
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-bottom: 60px;
+  padding-right: 100px;
+}
+
+.form-check2 {
+  padding-left: 20px;
+}
