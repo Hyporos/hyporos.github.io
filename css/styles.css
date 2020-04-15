@@ -7,36 +7,57 @@ body {
   background-color: #f5eaea;
 }
 
+/* Navbar */
 .navbar {
   background-color: #4d4646;
   font-family: "Roboto Slab";
 }
-
-.py-5 {
-  background-color: #4d4646;
-}
-
 
 .navbar > .container img {
   width: 150px;
   padding-right: 15px;
 }
 
-.container > .row img {
+.navbar > .container p {
+  padding-top: 30px;
+  padding-left: 50px;
+  display:flex;
+  flex-wrap: wrap;
+  overflow-wrap: break-word;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Footer */
+.py-5 {
+  background-color: #4d4646;
+}
+
+.m-0 {
+  margin:auto;
+  float:right;
+  width: 200px;
+}
+
+/* Cards */ 
+.row img {
   width: 253px;
   height: 160px;
 }
 
-.navbar > .container p {
-  padding-top: 30px;
-  padding-left: 50px;
+.row {
+  font-family: "Roboto";
 }
 
-.container > .row h1 {
+.row h1 {
   text-align: center;
   font-family: "Roboto Condensed";
   font-size: 50px;
   padding-top: 25px;
+}
+
+.card {
+  background-color: #5b5656;
 }
 
 .container a {
@@ -55,40 +76,33 @@ body {
   text-align: center;
 }
 
-.container > .row {
-  font-family: "Roboto";
-}
-
-.container > .row > .col-lg-9  > .row > .col-lg-4 > .card {
-  background-color: #5b5656;
-}
-
-.container > .row > .col-lg-9  > .row > .col-lg-4 > .card h5{
+.card h5{
   color: #f5eaea;
   font-family: "Roboto Slab";
 }
 
-
-.container > .row > .col-lg-9  > .row > .col-lg-4 > .card a {
+.card a {
   font-family: "Roboto Slab";
   font-size: 20px;
 }
 
-.container > .row > .col-lg-9  > .row > .col-lg-4 > .card p {
+.card p {
   color: #f5eaea;
   font-family: "Roboto";
 }
 
-.container > .row > .col-lg-3 > .list-group > .list-group-item {
+.list-group-item {
   background-color: #5b5656;
   font-family: "Roboto Slab";
   color: #57b36b;
 }
 
-.container > .row > .col-lg-3 > .list-group > #all {
+#all {
   background-Color: gray;
   color: #f5eaea
 }
+
+/* Forms */
 
 .form-email {
   width: 250px;
@@ -111,12 +125,6 @@ body {
   justify-content: center;
 }
 
-.m-0 {
-  margin:auto;
-  float:right;
-  width: 200px;
-}
-
 #contactForm {
   padding-top: 50px;
   padding-left: 100px;
@@ -126,4 +134,49 @@ body {
 
 .form-check2 {
   padding-left: 20px;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 991px) {
+body {
+  padding-top:150px;
+}
+.list-group  {
+  padding-bottom: 25px;
+}
+.container > .row img {
+  padding-top:10px;
+  border-radius:25px;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .navbar > .container p {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  .navbar > .container p {
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 468px) {
+  .navbar > .container p {
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .navbar > .container p {
+    font-size: 13px;
+  }
+  .container > .row img {
+    max-width:208px;
+  }
+  .container a {
+    text-align: center;
+  }
 }

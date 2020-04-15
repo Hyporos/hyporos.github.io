@@ -1,9 +1,12 @@
 
+let contactButton = document.querySelector(".con");
+let homeButton = document.querySelector(".ind");
+
+// If the contact page is open
+
+if (contactButton.classList.contains("active")) {
 
 window.onload = function() { 
-
-
-
 
     let drop = document.getElementById("contactOption");
     let hid = document.querySelector(".hid");
@@ -29,7 +32,9 @@ window.onload = function() {
   }
 
 }
-
+}
+// Else, if the home page is open
+else{
 // Button variables
 let allButton = document.querySelector('#all');
 let flowerButton = document.querySelector('#flower');
@@ -48,7 +53,7 @@ allButton.addEventListener('click', function(e) {
     allButton.style.color = "#f5eaea";
     flowerButton.style.backgroundColor = "#5b5656";
     flowerButton.style.color = "#57b36b";
-    ediblesButton.style.backgroundColor = "#5b5656";
+    ediblesButton.style.backgroundColor = "#5b5656"; // Set background and font color respectively, to indicate that it is selected
     ediblesButton.style.color = "#57b36b";
     miscButton.style.backgroundColor = "#5b5656";
     miscButton.style.color = "#57b36b";
@@ -56,7 +61,7 @@ allButton.addEventListener('click', function(e) {
     if (flower[0].style.display == 'none' || edibles[0].style.display == 'none' || misc[0].style.display == 'none'){
         for (let i = 0; i < 4; i++){
             flower[i].style.display = 'block';
-            edibles[i].style.display = 'block';
+            edibles[i].style.display = 'block'; // Shows all other cards, if any are hidden
             misc[i].style.display = 'block';
         }
     }
@@ -66,7 +71,7 @@ allButton.addEventListener('click', function(e) {
 
 })
 
-
+// If Flower is clicked
 flower.addEventListener('click', function(e) {
     console.log('flower clicked');
 
@@ -87,13 +92,13 @@ flower.addEventListener('click', function(e) {
 
         for (let i = 0; i < 4; i++){
             flower[i].style.display = 'block';
-            edibles[i].style.display = 'none';
+            edibles[i].style.display = 'none'; // If flower cards are hidden, hides other cards and shows only flower cards
             misc[i].style.display = 'none';
         }
     }
     else{
         for (let i = 0; i < 4; i++){
-            edibles[i].style.display = 'none';
+            edibles[i].style.display = 'none'; // If flower cards aren't hidden, simply just hide the other ones
             misc[i].style.display = 'none';
         }
     }
@@ -103,7 +108,7 @@ flower.addEventListener('click', function(e) {
 
 })
 
-
+// if Edibles is clicked
 edibles.addEventListener('click', function(e) {
     console.log('edibles clicked');
 
@@ -115,7 +120,7 @@ edibles.addEventListener('click', function(e) {
     allButton.style.color = "#57b36b";
     flowerButton.style.backgroundColor = "#5b5656";
     flowerButton.style.color = "#57b36b";
-    ediblesButton.style.backgroundColor = "gray";
+    ediblesButton.style.backgroundColor = "gray"; // The rest of this code is self explanatory, given the above comments
     ediblesButton.style.color = "#f5eaea";
     miscButton.style.backgroundColor = "#5b5656";
     miscButton.style.color = "#57b36b";
@@ -139,7 +144,7 @@ edibles.addEventListener('click', function(e) {
 
 })
 
-
+// if Misc is clicked
 misc.addEventListener('click', function(e) {
     console.log('misc clicked');
 
@@ -174,3 +179,4 @@ misc.addEventListener('click', function(e) {
     change.innerHTML = 'Misc';
 
 })
+}
